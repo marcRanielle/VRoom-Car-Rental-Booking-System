@@ -1,0 +1,93 @@
+.custom-card {
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  transition: transform 0.2s;
+  border: 2px solid #5C3B1E;
+  border-radius: 20px;
+  background: #f8f7f7;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.custom-card:hover {
+  transform: scale(1.06);
+  border-radius: 20px;
+  border: #F2B13A solid 3px;
+  background: #f8f7f7;
+}
+
+.card-text {
+  color: #5C3B1E;
+}
+
+.hero {
+  background: linear-gradient(to right, #e6c378, #f8f7f7);
+  padding: 100px 0;
+}
+
+.card-title {
+  color: #5C3B1E;
+  font-size: 30px;
+}
+
+.custom-card .card-img-top {
+  width: 50%;
+  height: auto;
+}
+
+#navbar {
+  background-color: #F2B13A;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link:hover {
+  color: #5C3B1E;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#brand {
+  font-family: 'Courier New', Courier, monospace;
+  color: #5C3B1E;
+}
+
+.footer {
+  background-color: black;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+body {
+  background-color: white;
+}
+
+#navlogo {
+  width: 50px;
+  height: 50px;
+}
+
+.promo-card {
+  border: 2px dashed #ff9800;
+  border-radius: 10px;
+  background-color: #fff8e1;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+  margin-bottom: 50px;
+}
+
+.promo-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
