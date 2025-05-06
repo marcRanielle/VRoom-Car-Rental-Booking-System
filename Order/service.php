@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oasis Dessert Services</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="orderstyles.css">
 </head>
 
 <body>
@@ -27,7 +27,6 @@
                     <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
                     <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
                 </ul>
-                <a class="nav-link active" id="login" href="#">Login</a>
             </div>
         </div>
     </nav>
@@ -88,6 +87,17 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="container-mt-3" id="container">
+        <div class="col-md-6 col-lg-5">
+            <a href="" id="moredeals">
+                <div class="promo-card p-3">
+                    <h5>Check this out, even more amazing deals available today!</h5>
+                    <p>Don't miss out, today’s deals just got even better!</p>
+                </div>
+            </a>
         </div>
     </div>
 

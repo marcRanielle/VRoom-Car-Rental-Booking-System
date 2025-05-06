@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oasis Dessert Table Option</title>
+    <title>Oasis Dessert Services</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="orderstyles.css">
 </head>
@@ -32,40 +32,20 @@
     </nav>
 
     <section class="hero text-center text-white">
-        <div class="container mt-5">
-            <div class="row justify-content-center">
-                <div class="col-md-3">
-                    <a href="tablenumber.php" class="text-decoration-none">
-                        <div class="card custom-card">
-                            <img src="../Assets/img/tablenumber.jpg" class="card-img-top" alt="" id="cardimg">
-                            <div class="card-body">
-                                <h5 class="card-title">Table No.</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card service-option text-center p-3">
-                        <div class="card-body">
-                            <p class="card-text">Already seated? Enter your table number so we can deliver your food directly to you.</p>
-                        </div>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <form>
+                    <div class="mb-3">
+                        <label for="tableNumber" class="form-label">Enter Your Table Number:</label>
+                        <input type="number" id="tableNumber" class="form-control" min="1" max="50" required>
                     </div>
-                </div>
 
-                <div class="col-md-3">
-                    <a href="payment.php" class="text-decoration-none">
-                        <div class="card custom-card">
-                            <img src="../Assets/img/ordercard.jpg" class="card-img-top" alt="" id="cardimg">
-                            <div class="card-body">
-                                <h5 class="card-title"> Order No. Card</h5>
-                            </div>
-                        </div>
-                    </a>
-                    <div class="card service-option text-center p-3">
-                        <div class="card-body">
-                            <p class="card-text">No table yet? Don’t worry — We will provide you with an order number card to ensure your food is delivered to your table.</p>
-                        </div>
-                    </div>
-                </div>
+                    <button type="submit" class="btn btn-primary w-100">Next</button>
+                </form>
             </div>
+        </div>
+    </div>
     </section>
 
     <div class="container mt-4">
@@ -87,6 +67,17 @@
                 </div>
             </div>
 
+        </div>
+    </div>
+
+    <div class="container-mt-3" id="container">
+        <div class="col-md-6 col-lg-5">
+            <a href="" id="moredeals">
+                <div class="promo-card p-3">
+                    <h5>Check this out, even more amazing deals available today!</h5>
+                    <p>Don't miss out, today’s deals just got even better!</p>
+                </div>
+            </a>
         </div>
     </div>
 

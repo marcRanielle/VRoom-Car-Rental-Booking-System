@@ -1,12 +1,12 @@
 .custom-card {
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
   transition: transform 0.2s;
   border: 2px solid #5C3B1E;
   border-radius: 20px;
   background: #f8f7f7;
   width: 100%;
-  box-sizing: border-box; 
+  box-sizing: border-box;
 }
 
 .custom-card:hover {
@@ -33,6 +33,7 @@
 .custom-card .card-img-top {
   width: 50%;
   height: auto;
+  border-radius: 20px;
 }
 
 #navbar {
@@ -90,4 +91,25 @@ body {
 
 .promo-card:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+#moredeals {
+  align-items: center;
+  text-decoration: none;
+  color: black;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  margin-top: 20px;       
+}
+
+form{
+  border: #ff9800 solid, 2px;
+  border-radius: 50% 10% 50% 10%;
+  padding: 150px;
+  color: #5C3B1E;
+  background-image: url(../Assets/img/desertbg.jpg);
 }
