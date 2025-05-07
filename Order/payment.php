@@ -31,13 +31,14 @@
         </div>
     </nav>
 
-    <section class="hero text-center text-white">
+    <section class="hero text-center">
+    <h3 id="pagetitle">Payment Option</h3>
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <a href="table.php" class="text-decoration-none">
+                    <a href="../Payment/cash.php" class="text-decoration-none">
                         <div class="card custom-card">
-                            <img src="../Assets/img/dinein.jpg" class="card-img-top" alt="">
+                            <img src="../Assets/img/cash.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Cash</h5>
                             </div>
@@ -51,9 +52,9 @@
                 </div>
 
                 <div class="col-md-3">
-                    <a href="payment.php" class="text-decoration-none">
+                    <a href="../Payment/cashless.php" class="text-decoration-none">
                         <div class="card custom-card">
-                            <img src="../Assets/img/takeout.jpg" class="card-img-top" alt="">
+                            <img src="../Assets/img/cashless.png" class="card-img-top" alt="">
                             <div class="card-body">
                                 <h5 class="card-title">Cashless</h5>
                             </div>

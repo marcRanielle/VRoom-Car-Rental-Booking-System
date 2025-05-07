@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oasis Dessert Table Option</title>
+    <title>Oasis Dessert Dining Reference</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="orderstyles.css">
 </head>
@@ -31,7 +31,8 @@
         </div>
     </nav>
 
-    <section class="hero text-center text-white">
+    <section class="hero text-center">
+    <h3 id="pagetitle">Help Us Deliver Your Orders</h3>
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-3">
@@ -51,7 +52,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <a href="payment.php" class="text-decoration-none">
+                    <a href="../Menu/menu1.php" class="text-decoration-none">
                         <div class="card custom-card">
                             <img src="../Assets/img/ordercard.jpg" class="card-img-top" alt="" id="cardimg">
                             <div class="card-body">

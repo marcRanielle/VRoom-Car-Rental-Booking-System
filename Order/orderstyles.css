@@ -23,6 +23,7 @@
 .hero {
   background: linear-gradient(to right, #e6c378, #f8f7f7);
   padding: 100px 0;
+  color: #5C3B1E;
 }
 
 .card-title {
@@ -112,4 +113,13 @@ form{
   padding: 150px;
   color: #5C3B1E;
   background-image: url(../Assets/img/desertbg.jpg);
+}
+
+#pagetitle{
+  font-size: 40px;
+  margin-bottom: 80px;
+}
+
+.form-control{
+  text-align: center;
 }

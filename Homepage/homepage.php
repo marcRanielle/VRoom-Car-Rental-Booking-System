@@ -47,7 +47,8 @@
 
     <div class="container" id="tagline">
       <h1 class="display-4">Order Easier. Enhance Your Dine-in Experience.</h1>
-      <p class="lead">Order here for dine-in or takeout and indulge in delicious Filipino desserts.</p>
+      <p class="lead">Order here for dine-in or takeout in any <strong>Oasis Dessert</strong> restaurants and indulge in delicious Filipino desserts.</p>
+      <p class="lead">Enjoy a hassle-free experience with exclusive deals, promos, and discounts!</p>
       <a href="../Order/service.php" class="btn btn-warning btn-lg mt-3" id="ordernow">Order Now</a>
     </div>
   </section>

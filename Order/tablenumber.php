@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oasis Dessert Services</title>
+    <title>Oasis Dessert Table Number</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="orderstyles.css">
 </head>
@@ -31,11 +31,12 @@
         </div>
     </nav>
 
-    <section class="hero text-center text-white">
+    <section class="hero text-center">
+    <h3 id="pagetitle">Table No.</h3>
     <div class="container mt-5">
         <div class="row justify-content-center">
             <div class="col-md-6">
-                <form>
+                <form action="../Menu/menu1.php" method="POST">
                     <div class="mb-3">
                         <label for="tableNumber" class="form-label">Enter Your Table Number:</label>
                         <input type="number" id="tableNumber" class="form-control" min="1" max="50" required>

@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Oasis Dessert Services</title>
+    <title>Oasis Dessert Order Type</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="orderstyles.css">
 </head>
@@ -31,7 +31,8 @@
         </div>
     </nav>
 
-    <section class="hero text-center text-white">
+    <section class="hero text-center">
+        <h3 id="pagetitle">Order Type</h3>
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-3">
