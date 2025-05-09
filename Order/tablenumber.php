@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Oasis Dessert Table Number</title>
     <link href="../Assets/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="orderstyles.css">
+    <link rel="stylesheet" href="orders.css">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
                 <form action="../Menu/menu1.php" method="POST">
                     <div class="mb-3">
                         <label for="tableNumber" class="form-label">Enter Your Table Number:</label>
-                        <input type="number" id="tableNumber" class="form-control" min="1" max="50" required>
+                        <input type="number" id="table" class="form-control" min="1" max="50" required>
                     </div>
 
                     <button type="submit" class="btn btn-primary w-100">Next</button>
@@ -82,15 +82,56 @@
         </div>
     </div>
 
-    <footer class="footer text-white py-3 text-center">
-        <div class="container">
-            <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
-            <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
-        </div>
-    </footer>
+    <footer class="footer text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Oasis Dessert</h5>
+        <p>Your sweet escape. Chill. Indulge. Repeat.</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Business Plan</a></li>
+          <li><a href="#">In-store Ordering System</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="text-center mb-3">
+      <a href="#" class="mx-2"><i class="fab fa-facebook-f text-white"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-instagram text-white"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-twitter text-white"></i></a>
+    </div>
+
+    <div class="text-center">
+      <small>&copy; 2025 Oasis Dessert. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
 
     <script src="../Assets/js/bootstrap.bundle.js"></script>
-    <script src="script.js"></script>
 
 </body>
 

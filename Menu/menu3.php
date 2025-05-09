@@ -50,7 +50,7 @@
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
             <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
-            <span class="nav-label">Chill Sips & Sun Gulps</span>
+            <span class="nav-label">Chill Sips & Gulps</span>
           </a>
         </li>
       </ul>
@@ -86,7 +86,7 @@
             <img src="../Assets/img/halohalo.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Arctic Halo-Halo</p>
-              <p class="card-price">₱119.00</p>
+              <p class="card-price">₱99.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -100,7 +100,7 @@
             <img src="../Assets/img/ubeicecream.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Antarctic Ube Ice Cream</p>
-              <p class="card-price">₱189.00</p>
+              <p class="card-price">₱59.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -114,7 +114,7 @@
             <img src="../Assets/img/mangoicecream.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Blizzard Mango Crunch</p>
-              <p class="card-price">₱140.00</p>
+              <p class="card-price">₱59.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -134,7 +134,7 @@
             <img src="../Assets/img/maisconhielo.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Mais Con Hielo</p>
-              <p class="card-price">₱120.00</p>
+              <p class="card-price">₱98.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -148,7 +148,7 @@
             <img src="../Assets/img/iskrambol.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Frostbite Ice Scramble</p>
-              <p class="card-price">₱69.00</p>
+              <p class="card-price">₱79.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -159,6 +159,13 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer text-black py-3 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
+      <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

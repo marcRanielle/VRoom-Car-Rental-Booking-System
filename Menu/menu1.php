@@ -50,7 +50,7 @@
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
             <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
-            <span class="nav-label">Chill Sips & Sun Gulps</span>
+            <span class="nav-label">Chill Sips & Gulps</span>
           </a>
         </li>
       </ul>
@@ -173,6 +173,13 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer text-black py-3 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
+      <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Oasis Dessert - Homepage</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="../Assets/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
@@ -37,10 +38,12 @@
       <div class="slider-card">
         <div class="slider-images" id="slider">
           <img src="../Assets/img/logo.png" alt="" />
-          <img src="../Assets/img/mangofloat.jpg" alt="Image 2" />
+          <img src="../Assets/img/mangofloat.jpg" alt="" />
           <img src="../Assets/img/biko.jpg" alt="" />
           <img src="../Assets/img/cassavacake.jpg" alt="" />
           <img src="../Assets/img/halohalo.jpg" alt="" />
+          <img src="../Assets/img/ubehalaya.jpg" alt="" />
+          <img src="../Assets/img/ensaymada.jpg" alt="" />
         </div>
       </div>
     </div>
@@ -117,7 +120,7 @@
         <a href=""><img src="../Assets/img/reviewand feedback.jpg" class="card-img-top" alt=""></a>
         <div class="card-body">
         <h5 class="card-title">Feedbacks & Reviews</h5>
-          <p class="card-text text-center">Trusted by thousands. Read our customer reviews.</p>
+          <p class="card-text text-center">Read our customer reviews.</p>
         </div>
       </div>
     </div>
@@ -137,12 +140,54 @@
 
   </section>
 
-  <footer class="footer text-white py-3 text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
-      <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+  <footer class="footer text-white pt-5 pb-3">
+  <div class="container">
+    <div class="row text-center text-md-start">
+      
+      <div class="col-md-3 mb-4">
+        <h5 class="fw-bold">Oasis Dessert</h5>
+        <p>Your sweet escape. Chill. Indulge. Repeat.</p>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Company</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Business Plan</a></li>
+          <li><a href="#">In-store Ordering System</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Support</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">FAQ</a></li>
+          <li><a href="#">Status</a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-semibold">Legal</h6>
+        <ul class="list-unstyled">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Cookie Settings</a></li>
+        </ul>
+      </div>
     </div>
-  </footer>
+
+    <div class="text-center mb-3">
+      <a href="#" class="mx-2"><i class="fab fa-facebook-f text-white"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-instagram text-white"></i></a>
+      <a href="#" class="mx-2"><i class="fab fa-twitter text-white"></i></a>
+    </div>
+
+    <div class="text-center">
+      <small>&copy; 2025 Oasis Dessert. All rights reserved.</small>
+    </div>
+  </div>
+</footer>
 
   <script src="../Assets/js/bootstrap.bundle.js"></script>
   <script src="script.js"></script>

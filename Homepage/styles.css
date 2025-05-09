@@ -23,7 +23,8 @@ body {
 }
 
 .footer {
-  background-color: black;
+  background-color: #5C3B1E !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .footer a {
@@ -33,6 +34,14 @@ body {
 
 .footer a:hover {
   text-decoration: underline;
+}
+
+.fw-bold{
+  color: #ffc107;
+}
+
+.fw-semibold{
+  color: #ffc107;
 }
 
 #navbar {
@@ -142,4 +151,31 @@ body {
   background-color: #F2B13A !important;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+}
+
+@media (max-width: 768px) {
+  .sidebar-menu-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    height: 40px;
+    width: 42px;
+    display: flex;
+    color: #F1F4FF;
+    background: #151A2D;
+  }
+
+  .sidebar.collapsed {
+    width: 270px;
+    left: -270px;
+  }
+
+  .sidebar.collapsed .sidebar-header .sidebar-toggler {
+    transform: none;
+  }
+
+  .sidebar.collapsed .sidebar-nav .primary-nav {
+    transform: translateY(15px);
+  }
+
 }

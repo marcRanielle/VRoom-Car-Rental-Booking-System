@@ -50,7 +50,7 @@
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
             <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
-            <span class="nav-label">Chill Sips & Sun Gulps</span>
+            <span class="nav-label">Chill Sips & Gulps</span>
           </a>
         </li>
       </ul>
@@ -86,7 +86,7 @@
             <img src="../Assets/img/biko.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Caramel Dune Biko</p>
-              <p class="card-price">₱119.00</p>
+              <p class="card-price">₱29.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -100,7 +100,7 @@
             <img src="../Assets/img/putobumbong.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Twilight Grain Sticks (Puto Bumbong)</p>
-              <p class="card-price">₱189.00</p>
+              <p class="card-price">₱59.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -114,7 +114,7 @@
             <img src="../Assets/img/champorado.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Cocoa Sand Champorado</p>
-              <p class="card-price">₱140.00</p>
+              <p class="card-price">₱40.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -134,7 +134,7 @@
             <img src="../Assets/img/bibingka.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Golden Ember Bibingka</p>
-              <p class="card-price">₱120.00</p>
+              <p class="card-price">₱70.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -148,7 +148,7 @@
             <img src="../Assets/img/palitaw1.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
               <p class="card-text">Sugar Dune Palitaw</p>
-              <p class="card-price">₱45.00</p>
+              <p class="card-price">₱65.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
@@ -159,6 +159,13 @@
       </div>
     </div>
   </div>
+
+  <footer class="footer text-black py-3 text-center">
+    <div class="container">
+      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
+      <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+  </footer>
 
   <script src="script.js"></script>
 </body>

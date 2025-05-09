@@ -108,11 +108,11 @@ body {
 }
 
 form{
-  border: #ff9800 solid, 2px;
-  border-radius: 50% 10% 50% 10%;
+  border: #5C3B1E solid, 2px;
+  border-radius: 10%;
   padding: 150px;
   color: #5C3B1E;
-  background-image: url(../Assets/img/desertbg.jpg);
+  background-color: wheat;
 }
 
 #pagetitle{
@@ -122,4 +122,60 @@ form{
 
 .form-control{
   text-align: center;
+}
+
+#table {
+  border: #5C3B1E solid 2px;
+  border-radius: 6px;
+  padding: 10px;
+  box-shadow: none;
+}
+
+@media (max-width: 768px) {
+  .sidebar-menu-button {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+    height: 40px;
+    width: 42px;
+    display: flex;
+    color: #F1F4FF;
+    background: #151A2D;
+  }
+
+  .sidebar.collapsed {
+    width: 270px;
+    left: -270px;
+  }
+
+  .sidebar.collapsed .sidebar-header .sidebar-toggler {
+    transform: none;
+  }
+
+  .sidebar.collapsed .sidebar-nav .primary-nav {
+    transform: translateY(15px);
+  }
+
+}
+
+.footer {
+  background-color: #5C3B1E !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+.fw-bold{
+  color: #ffc107;
+}
+
+.fw-semibold{
+  color: #ffc107;
 }
