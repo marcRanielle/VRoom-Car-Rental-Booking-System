@@ -52,7 +52,7 @@
                 </div>
 
                 <div class="col-md-3">
-                    <a href="payment.php" class="text-decoration-none">
+                    <a href="../Menu/menu1.php" class="text-decoration-none">
                         <div class="card custom-card">
                             <img src="../Assets/img/takeout.jpg" class="card-img-top" alt="">
                             <div class="card-body">

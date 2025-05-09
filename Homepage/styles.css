@@ -14,13 +14,15 @@ body {
 
 .feature-card {
   transition: transform 0.3s ease;
+  border: #5C3B1E solid 1px;
 }
 
 .feature-card:hover {
   transform: translateY(-10px);
+  background-image: url(../Assets/img/desertbg.jpg);
 }
 
-.footer{
+.footer {
   background-color: black;
 }
 
@@ -48,7 +50,7 @@ body {
   padding: 5px;
 }
 
-#brand{
+#brand {
   font-family: 'Courier New', Courier, monospace;
   color: #5C3B1E;
 }
@@ -58,7 +60,7 @@ body {
   height: 400px;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-left: auto;
   margin-right: auto;
   margin-top: -50px;
@@ -80,21 +82,21 @@ body {
   border-radius: 30px;
 }
 
-#ordernow:hover{
+#ordernow:hover {
   background-color: white;
   color: #5C3B1E;
 }
 
-#tagline{
+#tagline {
   color: #5C3B1E;
 }
 
-#infos{
+#infos {
   margin-top: 50px;
   margin-bottom: 50px;
 }
 
-#login{
+#login {
   color: white;
   background-color: blue;
   border-radius: 5px;
@@ -103,14 +105,41 @@ body {
   height: auto;
 }
 
-#login:hover{
+#login:hover {
   color: #5C3B1E;
   background-color: white;
   border-radius: 5px;
   padding: 10px;
 }
 
-#navlogo{
+#navlogo {
   width: 50px;
   height: 50px;
+}
+
+.custom-card {
+  border-radius: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  transition: transform 0.3s ease;
+  border: #ffc107 solid 2px;
+}
+
+.custom-card:hover {
+  transform: translateY(-10px);
+  border: #5C3B1E solid 3px;
+}
+
+.card-img-top {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  width: 100%;
+  height: 250px;
+}
+
+.custom-card .card-body {
+  color: #5C3B1E !important;
+  background-color: #F2B13A !important;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }

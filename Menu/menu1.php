@@ -62,7 +62,15 @@
             <span class="nav-label">Cart</span>
           </a>
         </li>
+
+        <li class="nav-item">
+          <a href="../Homepage/homepage.php" class="nav-link">
+            <span class="material-symbols-rounded">home</span>
+            <span class="nav-label">Home</span>
+          </a>
+        </li>
       </ul>
+
     </nav>
   </aside>
 
@@ -77,7 +85,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/cassavacake.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Cassava Cake</p>
+              <p class="card-text">Desert Cassava Delight</p>
               <p class="card-price">₱119.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
@@ -91,7 +99,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/ubecake.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Ube Cake</p>
+              <p class="card-text">Ube Dune Cake</p>
               <p class="card-price">₱189.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
@@ -105,7 +113,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/lecheflancake.JPG" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Leche Flan Cake</p>
+              <p class="card-text">Leche Flan Mirage Cake</p>
               <p class="card-price">₱140.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
@@ -125,7 +133,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/eggpie.png" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Egg Pie</p>
+              <p class="card-text">Golden Sun Egg Pie</p>
               <p class="card-price">₱120.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
@@ -139,7 +147,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/ensaymada.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Ensaymada</p>
+              <p class="card-text">Sandy Swirl Ensaymada</p>
               <p class="card-price">₱69.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>
@@ -153,7 +161,7 @@
           <div class="card custom-card">
             <img src="../Assets/img/mongobeanhopia.jpg" class="card-img-top" alt="" id="img">
             <div class="card-body">
-              <p class="card-text">Mongo Bean Hopia</p>
+              <p class="card-text">Golden Hopia Monggo</p>
               <p class="card-price">₱45.00</p>
               <div class="row" id="row">
                 <a href="#" class="btn button" id="button">Add to cart</a>

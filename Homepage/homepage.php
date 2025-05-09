@@ -13,7 +13,7 @@
 
   <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-    <img src="../Assets/img/logo.png" alt="" id="navlogo">
+      <img src="../Assets/img/logo.png" alt="" id="navlogo">
       <a class="navbar-brand" href="#" id="brand">Oasis Dessert</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
@@ -27,7 +27,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
         </ul>
-          <a class="nav-link active" id="login" href="#">Login</a>
+        <a class="nav-link active" id="login" href="#">Login</a>
       </div>
     </div>
   </nav>
@@ -57,7 +57,7 @@
     <div class="container">
       <div class="row text-center">
         <div class="col-md-4">
-          <div class="card feature-card shadow-sm border-0">
+          <div class="card feature-card shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Dine-In or Take-Out</h5>
               <p class="card-text">"Quickly place your order for dine-in or take-out—your food, your way, right when you want it."</p>
@@ -65,7 +65,7 @@
           </div>
         </div>
         <div class="col-md-4 mt-4 mt-md-0">
-          <div class="card feature-card shadow-sm border-0">
+          <div class="card feature-card shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Fresh Ingredients</h5>
               <p class="card-text">"Every dish is made with fresh, high-quality ingredients prepared just for you."</p>
@@ -73,7 +73,7 @@
           </div>
         </div>
         <div class="col-md-4 mt-4 mt-md-0">
-          <div class="card feature-card shadow-sm border-0">
+          <div class="card feature-card shadow-sm">
             <div class="card-body">
               <h5 class="card-title">Easy Ordering</h5>
               <p class="card-text">"Our streamlined ordering system makes it simple to order food you want—fast and hassle-free."</p>
@@ -82,6 +82,59 @@
         </div>
       </div>
     </div>
+
+    <div class="container my-5 text-center">
+  <div class="row justify-content-center">
+    
+  <div class="col-6 col-sm-6 col-md-4 cards">
+    <div class="card custom-card mb-4" >
+        <img src="../Assets/img/signupdiscount.jpg" class="card-img-top" alt=""></a>
+        <div class="card-body">
+        <h5 class="card-title" >Sign up now</h5>
+          <p class="card-text text-center">Unlock your welcome discount.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 cards">
+      <div class="card custom-card mb-4">
+        <a href=""><img src="../Assets/img/dealsandpromos.jpg" class="card-img-top" alt=""></a>
+        <div class="card-body">
+        <h5 class="card-title">Deals & Promos</h5>
+          <p class="card-text text-center">Claim exclusive discounts & deals</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="container my-5 text-center" id="con-bottom">
+  <div class="row justify-content-center">
+    
+  <div class="col-6 col-sm-6 col-md-4 cards">
+    <div class="card custom-card mb-4">
+        <a href=""><img src="../Assets/img/reviewand feedback.jpg" class="card-img-top" alt=""></a>
+        <div class="card-body">
+        <h5 class="card-title">Feedbacks & Reviews</h5>
+          <p class="card-text text-center">Trusted by thousands. Read our customer reviews.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-6 col-sm-6 col-md-4 cards">
+      <div class="card custom-card mb-4">
+        <a href=""><img src="../Assets/img/about us.jpg" class="card-img-top" alt=""></a>
+        <div class="card-body">
+        <h5 class="card-title">About us</h5>
+          <p class="card-text text-center">Learn more about us...</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
   </section>
 
   <footer class="footer text-white py-3 text-center">
