@@ -1,0 +1,20 @@
+body {
+  background: #fefcf7;
+  font-family: 'Poppins', sans-serif;
+}
+
+.cart-item {
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  border-radius: 16px;
+  padding: 10px;
+}
+
+.quantity-controls input {
+  max-width: 60px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+button {
+  border-radius: 12px !important;
+}

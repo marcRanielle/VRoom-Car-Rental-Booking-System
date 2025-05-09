@@ -36,7 +36,7 @@
         <div class="container mt-5">
             <div class="row justify-content-center">
                 <div class="col-md-3">
-                    <a href="../Payment/cash.php" class="text-decoration-none">
+                    <a href="../Payment/receipt.php" class="text-decoration-none">
                         <div class="card custom-card">
                             <img src="../Assets/img/cash.png" class="card-img-top" alt="">
                             <div class="card-body">

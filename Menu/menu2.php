@@ -1,3 +1,32 @@
+<?php
+
+include '../dbcon.php'; 
+
+session_start();
+
+if (!isset($_SESSION['cart'])) {
+  $_SESSION['cart'] = [];
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
+  $product = $_POST['product'];
+  $price = floatval($_POST['price']);
+
+  if (isset($_SESSION['cart'][$product])) {
+    $_SESSION['cart'][$product]['quantity'] += 1;
+  } else {
+    $_SESSION['cart'][$product] = [
+      'name' => $product,
+      'price' => $price,
+      'quantity' => 1
+    ];
+  }
+
+  header("Location: ../Cart/cart.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -88,7 +117,11 @@
               <p class="card-text">Ube Halaya Bliss</p>
               <p class="card-price">₱99.00</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Halaya Bliss">
+                  <input type="hidden" name="price" value="99.00">
+                  <button type="submit" class="btn button" id="button">Add to cart</button>
+                </form>
                 <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
               </div>
             </div>
