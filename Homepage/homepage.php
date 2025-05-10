@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Oasis Dessert - Homepage</title>
+  <title>VRoom - Homepage</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link href="../Assets/css/bootstrap.min.css" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
@@ -14,8 +14,8 @@
 
   <nav class="navbar navbar-expand-lg" id="navbar">
     <div class="container">
-      <img src="../Assets/img/logo.png" alt="" id="navlogo">
-      <a class="navbar-brand" href="#" id="brand">Oasis Dessert</a>
+      <img src="../Assets/img/logov.png" alt="" id="navlogo">
+      <a class="navbar-brand" href="#" id="brand">VRoom</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -24,7 +24,7 @@
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item"><a class="nav-link active" href="homepage.php">Home</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Deals</a></li>
-          <li class="nav-item"><a class="nav-link" href="../Order/service.php">Order</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Menu/menu1.php">Rent</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Feedback</a></li>
           <li class="nav-item"><a class="nav-link" href="#">About us</a></li>
         </ul>
@@ -37,22 +37,22 @@
     <div class="container">
       <div class="slider-card">
         <div class="slider-images" id="slider">
-          <img src="../Assets/img/logo.png" alt="" />
-          <img src="../Assets/img/mangofloat.jpg" alt="" />
-          <img src="../Assets/img/biko.jpg" alt="" />
-          <img src="../Assets/img/cassavacake.jpg" alt="" />
-          <img src="../Assets/img/halohalo.jpg" alt="" />
-          <img src="../Assets/img/ubehalaya.jpg" alt="" />
+          <img src="../Assets/img/logovroom.png" alt="" />
+          <img src="../Assets/img/toyotacorolla.jpg" alt="" />
+          <img src="../Assets/img/hyundaisantafe.jpg" alt="" />
+          <img src="../Assets/img/fordmustangconvertible.jpg" alt="" />
+          <img src="../Assets/img/rollsroycephantom.jpg" alt="" />
+          <img src="../Assets/img/lexuslm.jpg" alt="" />
           <img src="../Assets/img/ensaymada.jpg" alt="" />
         </div>
       </div>
     </div>
 
     <div class="container" id="tagline">
-      <h1 class="display-4">Order Easier. Enhance Your Dine-in Experience.</h1>
-      <p class="lead">Order here for dine-in or takeout in any <strong>Oasis Dessert</strong> restaurants and indulge in delicious Filipino desserts.</p>
-      <p class="lead">Enjoy a hassle-free experience with exclusive deals, promos, and discounts!</p>
-      <a href="../Order/service.php" class="btn btn-warning btn-lg mt-3" id="ordernow">Order Now</a>
+      <h1 class="display-4">Wanna Go Anywhere? Go VRoom.</h1>
+      <p class="lead">From City Streets to Scenic Routes — We’ve Got Your Keys.</p>
+      <p class="lead">Drive What You Want. When You Want. Where You Want. With VRoom.</p>
+      <a href="../Menu/menu1.php" class="btn btn-lg mt-3" id="ordernow">Rent Now</a>
     </div>
   </section>
 
@@ -62,24 +62,24 @@
         <div class="col-md-4">
           <div class="card feature-card shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Dine-In or Take-Out</h5>
-              <p class="card-text">"Quickly place your order for dine-in or take-out—your food, your way, right when you want it."</p>
+              <h5 class="card-title">Flexible Rentals</h5>
+              <p class="card-text">"Choose your vehicle and book for a 24 hours or a days — perfect for any schedule."</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mt-4 mt-md-0">
           <div class="card feature-card shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Fresh Ingredients</h5>
-              <p class="card-text">"Every dish is made with fresh, high-quality ingredients prepared just for you."</p>
+              <h5 class="card-title">Well-Maintained Cars</h5>
+              <p class="card-text">"All our vehicles are clean, serviced regularly, and ready for a smooth ride."</p>
             </div>
           </div>
         </div>
         <div class="col-md-4 mt-4 mt-md-0">
           <div class="card feature-card shadow-sm">
             <div class="card-body">
-              <h5 class="card-title">Easy Ordering</h5>
-              <p class="card-text">"Our streamlined ordering system makes it simple to order food you want—fast and hassle-free."</p>
+              <h5 class="card-title">Simple Booking</h5>
+              <p class="card-text">"Reserve your car in minutes with our easy-to-use online system—no hassle, just drive."</p>
             </div>
           </div>
         </div>
@@ -145,8 +145,8 @@
     <div class="row text-center text-md-start">
       
       <div class="col-md-3 mb-4">
-        <h5 class="fw-bold">Oasis Dessert</h5>
-        <p>Your sweet escape. Chill. Indulge. Repeat.</p>
+        <h5 class="fw-bold">VRoom Car Rental</h5>
+        <p>From City Streets to Scenic Routes — We’ve Got Your Keys.</p>
       </div>
 
       <div class="col-md-3 mb-4">
@@ -184,7 +184,7 @@
     </div>
 
     <div class="text-center">
-      <small>&copy; 2025 Oasis Dessert. All rights reserved.</small>
+      <small>&copy; 2025 VRoom Car Rental. All rights reserved.</small>
     </div>
   </div>
 </footer>

@@ -1,6 +1,6 @@
 <?php
 
-include '../dbcon.php'; 
+include '../dbcon.php';
 
 session_start();
 
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu: Oasis Creams</title>
+  <title>Selection: SUV</title>
   <link rel="stylesheet" href="menustyles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
@@ -43,55 +43,49 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
   <aside class="sidebar">
     <header class="sidebar-header">
       <a href="../Assets/img/logo.png" class="header-logo">
-        <img src="../Assets/img/logo.png" alt="" />
+        <img src="../Assets/img/logov.png" alt="" />
       </a>
-      <h3>Main Menu</h3>
+      <h3>Car Selection</h3>
     </header>
     <nav class="sidebar-nav">
       <ul class="nav-list primary-nav">
         <li class="nav-item">
           <a href="menu1.php" class="nav-link">
-            <img src="../Assets/img/cassavacake.jpg" alt="" id="menuimg">
-            <span class="nav-label">Dune Bakes</span>
+            <img src="../Assets/img/toyotacorolla.jpg" alt="" id="menuimg">
+            <span class="nav-label">Sedan</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="menu2.php" class="nav-link">
-            <img src="../Assets/img/mangofloat.jpg" alt="" id="menuimg">
-            <span class="nav-label">Oasis Creams</span>
+            <img src="../Assets/img/fordeverest.jpg" alt="" id="menuimg">
+            <span class="nav-label">SUV</span>
           </a>
-
         </li>
         <li class="nav-item">
           <a href="menu3.php" class="nav-link">
-            <img src="../Assets/img/halohalo.jpg" alt="" id="menuimg">
-            <span class="nav-label">Polar Desert Bites</span>
+            <img src="../Assets/img/lambhorginiaventorsraodster.jpg" alt="" id="menuimg">
+            <span class="nav-label">Convertible</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="menu4.php" class="nav-link">
-            <img src="../Assets/img/biko.jpg" alt="" id="menuimg">
-            <span class="nav-label">Sandy Grain Glimmers</span>
+            <img src="../Assets/img/lexuslm.jpg" alt="" id="menuimg">
+            <span class="nav-label">Luxury Car</span>
           </a>
-
+        </li>
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
             <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
-            <span class="nav-label">Chill Sips & Gulps</span>
+            <span class="nav-label">Minivan</span>
           </a>
         </li>
       </ul>
-
       <ul class="nav-list secondary-nav">
-        <li class="nav-item">
-          <a href="../Cart/cart.php" class="nav-link">
-            <span class="material-symbols-rounded">shopping_cart</span>
-            <span class="nav-label">Cart</span>
+        <li class="nav-item"><a href="../Cart/cart.php" class="nav-link">
+            <span class="material-symbols-rounded">directions_car</span>
+            <span class="nav-label">My Car List</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="../Homepage/homepage.php" class="nav-link">
             <span class="material-symbols-rounded">home</span>
@@ -99,30 +93,31 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
           </a>
         </li>
       </ul>
-
     </nav>
   </aside>
 
-  <div class="container" id="titllemenu">
-    <h4>Oasis Creams</h4>
-  </div>
-
   <div class="dashboard-container">
+    <div class="container-lg" id="titlemenu">
+    <h4>Sport Utility Vehicle (SUV)</h4>
+  </div>
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/ubehalaya.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/toyotafortuner.jpg">
+            <img src="../Assets/img/toyotafortuner.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Ube Halaya Bliss</p>
-              <p class="card-price">₱99.00</p>
+              <p class="card-text">Toyota Fortuner</p>
+              <p class="card-price">₱3,275.00 <br>For 24 Hours</p>
+              <p>Ideal for city and off-road adventures with automatic transmission.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
-                  <input type="hidden" name="product" value="Ube Halaya Bliss">
-                  <input type="hidden" name="price" value="99.00">
-                  <button type="submit" class="btn button" id="button">Add to cart</button>
+                  <input type="hidden" name="product" value="Desert Cassava Delight">
+                  <input type="hidden" name="price" value="119.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -130,13 +125,20 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/mangofloat.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/fordeverest.jpg">
+            <img src="../Assets/img/fordeverest.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Mango Mirage Float</p>
-              <p class="card-price">₱80.00</p>
+              <p class="card-text">Ford Everest</p>
+              <p class="card-price">₱4,900.00 <br>For 24 Hours</p>
+              <p>Suitable for family long trips. With automatic transmission.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -144,33 +146,43 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/lecheflan.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/hyundaitucson.jpg">
+            <img src="../Assets/img/hyundaitucson.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Leche Flan Lagoon</p>
-              <p class="card-price">₱120.00</p>
+              <p class="card-text">Hyundai Tucson</p>
+              <p class="card-price">₱3,800.00 <br>For 24 Hours</p>
+              <p> Compact SUV for smooth ride with modern features.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="dashboard-container">
-    <div class="container mt-5">
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/majablanca.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/toyotalandcruiser.jpg">
+            <img src="../Assets/img/toyotalandcruiser.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Oasis Maja Blanca</p>
-              <p class="card-price">₱48.00</p>
+              <p class="card-text">Toyota Land Cruiser</p>
+              <p class="card-price">₱5,000.00 <br>For 24 Hours</p>
+              <p>Premium SUV offering luxury and security, Used for VIP transport.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -178,24 +190,32 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/bukosalad.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/hyundaisantafe.jpg">
+            <img src="../Assets/img/hyundaisantafe.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Coconut Palm Parfait</p>
-              <p class="card-price">₱75.00</p>
+              <p class="card-text">Hyundai Santa Fe</p>
+              <p class="card-price">₱3,500.00 <br>For 24 Hours</p>
+              <p>Mid-size SUV with advanced features. Equipped with automatic transmission</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
   <footer class="footer text-black py-3 text-center">
     <div class="container">
-      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
+      <p class="mb-0">&copy; 2025 VRoom Car Rental. All rights reserved.</p>
       <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </div>
   </footer>

@@ -9,7 +9,6 @@
 
 body {
   min-height: 100vh;
-  background: linear-gradient(#F1F3FF, #CBD4FF);
 }
 
 .sidebar {
@@ -19,7 +18,7 @@ body {
   z-index: 10;
   width: 300px;
   height: 100vh;
-  background: #F2B13A;
+  background: black;
   transition: all 0.4s ease;
 }
 
@@ -74,15 +73,14 @@ body {
   padding: 11px 15px;
   align-items: center;
   text-decoration: none;
-  border: 1px solid #F2B13A;
   transition: 0.4s ease;
   font-size: 13px;
 }
 
 .sidebar-nav .nav-item:is(:hover, .open)>.nav-link:not(.dropdown-title),
 .nav-link.active {
-  color: #5C3B1E;
-  background: #EEF2FF;
+  color: white;
+  background: #C600FF;
   width: 100%;
 }
 
@@ -103,7 +101,10 @@ body {
   position: absolute;
   bottom: 10px;
   width: 100%;
-  background: #F2B13A;
+  background: black;
+  padding-bottom: 15px;
+  padding-top: 15px;
+  border-top-left-radius: 10px;
 }
 
 .sidebar-nav .nav-item {
@@ -191,7 +192,7 @@ body {
   margin-left: 300px;
   padding: 20px;
   flex-wrap: wrap;
-  background: linear-gradient(to bottom, #f1f5f9, #cbd5e1);
+  background-color: white;
 }
 
 .dashboard-content {
@@ -204,7 +205,7 @@ body {
 }
 
 h3 {
-  color: #5C3B1E;
+  color: white;
 }
 
 #menuimg {
@@ -228,6 +229,11 @@ h3 {
   width: 250px;
   height: 200px;
   margin-bottom: 8px;
+  transition: 1s ease;
+}
+
+#img:hover{
+  transform: scale(1.2);
 }
 
 .card-body {
@@ -252,7 +258,7 @@ h3 {
 }
 
 #button {
-  background-color: #F2B13A;
+  background-color: black;
   border-color: #5C3B1E;
   width: 100px;
   display: inline-block;
@@ -267,13 +273,18 @@ h3 {
 
 #button:hover {
   background-color: white;
-  color: #5C3B1E;
+  color: black;
 }
 
 h4 {
-  margin-left: 350px;
-  padding-top: 50px;
-  color: #5C3B1E;
+  margin-right: 50px;
+  padding-top: 30px;
+  color: black;
+}
+
+#titlemenu{
+  background-color: white;
+  padding-bottom: 10px;
 }
 
 .footer {
@@ -286,6 +297,7 @@ h4 {
 }
 
 .footer a:hover {
+  color: #C600FF;
   text-decoration: underline;
 }
 
