@@ -142,12 +142,12 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   margin: 10px;
   transition: transform 0.3s ease;
-  border: #ffc107 solid 2px;
+  border: black solid 2px;
 }
 
 .custom-card:hover {
   transform: translateY(-10px);
-  border: #5C3B1E solid 3px;
+  border: #C600FF solid 3px;
 }
 
 .card-img-top {
@@ -158,8 +158,8 @@ body {
 }
 
 .custom-card .card-body {
-  color: #5C3B1E !important;
-  background-color: #F2B13A !important;
+  color: white !important;
+  background-color: black !important;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }

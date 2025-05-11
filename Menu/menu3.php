@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
         </li>
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
-            <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
+            <img src="../Assets/img/toyotagrandia.jpg" alt="" id="menuimg">
             <span class="nav-label">Minivan</span>
           </a>
         </li>

@@ -1,10 +1,39 @@
+<?php
+
+include '../dbcon.php';
+
+session_start();
+
+if (!isset($_SESSION['cart'])) {
+  $_SESSION['cart'] = [];
+}
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
+  $product = $_POST['product'];
+  $price = floatval($_POST['price']);
+
+  if (isset($_SESSION['cart'][$product])) {
+    $_SESSION['cart'][$product]['quantity'] += 1;
+  } else {
+    $_SESSION['cart'][$product] = [
+      'name' => $product,
+      'price' => $price,
+      'quantity' => 1
+    ];
+  }
+
+  header("Location: ../Cart/cart.php");
+  exit();
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Menu: Chill Sips & Gulps</title>
+  <title>Selection: Minivan</title>
   <link rel="stylesheet" href="menustyles.css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@24,400,0,0" />
   <link rel="stylesheet" href="../Assets/css/bootstrap.min.css">
@@ -14,55 +43,49 @@
   <aside class="sidebar">
     <header class="sidebar-header">
       <a href="../Assets/img/logo.png" class="header-logo">
-        <img src="../Assets/img/logo.png" alt="" />
+        <img src="../Assets/img/logov.png" alt="" />
       </a>
-      <h3>Main Menu</h3>
+      <h3>Car Selection</h3>
     </header>
     <nav class="sidebar-nav">
       <ul class="nav-list primary-nav">
         <li class="nav-item">
           <a href="menu1.php" class="nav-link">
-            <img src="../Assets/img/cassavacake.jpg" alt="" id="menuimg">
-            <span class="nav-label">Dune Bakes</span>
+            <img src="../Assets/img/toyotacorolla.jpg" alt="" id="menuimg">
+            <span class="nav-label">Sedan</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="menu2.php" class="nav-link">
-            <img src="../Assets/img/mangofloat.jpg" alt="" id="menuimg">
-            <span class="nav-label">Oasis Creams</span>
+            <img src="../Assets/img/fordeverest.jpg" alt="" id="menuimg">
+            <span class="nav-label">SUV</span>
           </a>
-
         </li>
         <li class="nav-item">
           <a href="menu3.php" class="nav-link">
-            <img src="../Assets/img/halohalo.jpg" alt="" id="menuimg">
-            <span class="nav-label">Polar Desert Bites</span>
+            <img src="../Assets/img/lambhorginiaventorsraodster.jpg" alt="" id="menuimg">
+            <span class="nav-label">Convertible</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="menu4.php" class="nav-link">
-            <img src="../Assets/img/biko.jpg" alt="" id="menuimg">
-            <span class="nav-label">Sandy Grain Glimmers</span>
+            <img src="../Assets/img/lexuslm.jpg" alt="" id="menuimg">
+            <span class="nav-label">Luxury Car</span>
           </a>
-
+        </li>
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
-            <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
-            <span class="nav-label">Chill Sips & Gulps</span>
+            <img src="../Assets/img/toyotagrandia.jpg" alt="" id="menuimg">
+            <span class="nav-label">Minivan</span>
           </a>
         </li>
       </ul>
-
       <ul class="nav-list secondary-nav">
-        <li class="nav-item">
-          <a href="../Cart/cart.php" class="nav-link">
-            <span class="material-symbols-rounded">shopping_cart</span>
-            <span class="nav-label">Cart</span>
+        <li class="nav-item"><a href="../Cart/cart.php" class="nav-link">
+            <span class="material-symbols-rounded">directions_car</span>
+            <span class="nav-label">My Car List</span>
           </a>
         </li>
-
         <li class="nav-item">
           <a href="../Homepage/homepage.php" class="nav-link">
             <span class="material-symbols-rounded">home</span>
@@ -70,26 +93,31 @@
           </a>
         </li>
       </ul>
-
     </nav>
   </aside>
 
-  <div class="container" id="titllemenu">
-    <h4>Chill Sips & Gulps</h4>
-  </div>
-
   <div class="dashboard-container">
+    <div class="container-lg" id="titlemenu">
+    <h4>Minivan</h4>
+  </div>
     <div class="container mt-5">
       <div class="row">
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/bukojuice.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/toyotainnova.jpg">
+            <img src="../Assets/img/toyotainnova.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Arctic Breeze Buko Juice</p>
-              <p class="card-price">₱30.00</p>
+              <p class="card-text">Toyota Innova</p>
+              <p class="card-price">₱3,500.00 <br>For 24 Hours Minimum</p>
+              <p>7-seater MPV. Reliable and comfortable. Ideal for family trips and group travels.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Desert Cassava Delight">
+                  <input type="hidden" name="price" value="119.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -97,13 +125,20 @@
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/mangoshake.png" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/hyundaistarex.jpg">
+            <img src="../Assets/img/hyundaistarex.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Mango Crush Shake</p>
-              <p class="card-price">₱30.00</p>
+              <p class="card-text">Hyundai Starex</p>
+              <p class="card-price">₱5,949.00 <br>For 24 Hours Minimum</p>
+              <p>Minivan with ample room for passengers and luggage. Suitable for city drives and long-distance travel.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -111,33 +146,43 @@
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/calamansijuice.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/toyotagrandia.jpg">
+            <img src="../Assets/img/toyotagrandia.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Icy Desert Calamansi Juice</p>
-              <p class="card-price">₱20.00</p>
+              <p class="card-text">Toyota Grandia</p>
+              <p class="card-price">₱5,299.00 <br>For 24 Hours Minimum</p>
+              <p>Premium van with higher seating capacity. Perfect for larger groups or corporate outings.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
 
-  <div class="dashboard-container">
-    <div class="container mt-5">
-      <div class="row">
+      <div class="row mt-5">
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/sagotgulaman.jpg" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/hondabry.jpg">
+            <img src="../Assets/img/hondabry.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Sago't Gulaman Glacier</p>
-              <p class="card-price">₱35.00</p>
+              <p class="card-text">Honda BR-V</p>
+              <p class="card-price">₱4,500.00 <br>For 24 Hours Minimum</p>
+              <p>Compact SUV with 7-seater capacity, blending style and functionality. Great for urban and out-of-town trips.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -145,24 +190,32 @@
 
         <div class="col-md-4">
           <div class="card custom-card">
-            <img src="../Assets/img/pinyapalamig.webp" class="card-img-top" alt="" id="img">
+            <a href="../Assets/img/opelzapira.jpg">
+            <img src="../Assets/img/opelzapira.jpg" class="card-img-top" alt="" id="img">
+            </a>
             <div class="card-body">
-              <p class="card-text">Pinya Palamig</p>
-              <p class="card-price">₱30.00</p>
+              <p class="card-text">Opel Zafira</p>
+              <p class="card-price">₱3,500.00 <br>For 24 Hours Minimum</p>
+              <p>European minivan with comfort and efficiency, suitable for family vacations and group tours.</p>
               <div class="row" id="row">
-                <a href="#" class="btn button" id="button">Add to cart</a>
-                <a href="../Order/payment.php" class="btn button" id="button">Buy now</a>
+                <form method="POST" class="col">
+                  <input type="hidden" name="product" value="Ube Dune Cake">
+                  <input type="hidden" name="price" value="189.00">
+                  <button type="submit" class="btn button" id="button">Add to list</button>
+                </form>
+                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
         </div>
       </div>
+
     </div>
   </div>
 
   <footer class="footer text-black py-3 text-center">
     <div class="container">
-      <p class="mb-0">&copy; 2025 Oasis Dessert. All rights reserved.</p>
+      <p class="mb-0">&copy; 2025 VRoom Car Rental. All rights reserved.</p>
       <p class="mb-0"><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
     </div>
   </footer>

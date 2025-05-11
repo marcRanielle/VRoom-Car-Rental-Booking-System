@@ -91,7 +91,7 @@ $qr_url = "https://quickchart.io/chart?cht=qr&chs=200x200&chl=" . urlencode($qr_
 
 <body>
 
-    <?php if (!empty($cart)): // Only show the receipt if the cart has items 
+    <?php if (!empty($cart)):
     ?>
         <div class="receipt">
             <h3>Order Receipt</h3>

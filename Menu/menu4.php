@@ -75,7 +75,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
         </li>
         <li class="nav-item">
           <a href="menu5.php" class="nav-link">
-            <img src="../Assets/img/calamansijuice.jpg" alt="" id="menuimg">
+            <img src="../Assets/img/toyotagrandia.jpg" alt="" id="menuimg">
             <span class="nav-label">Minivan</span>
           </a>
         </li>
@@ -109,7 +109,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Rolls-Royce Phantom</p>
-              <p class="card-price">₱27,500.00 <br>For 1 hour Minimum</p>
+              <p class="card-price">₱27,500.00 <br>For 1 Hour Minimum</p>
               <p>Ideal for weddings, VIP transfers, and prestigious corporate events. Comes with a professional chauffeur.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -130,8 +130,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Rolls-Royce Ghost</p>
-              <p class="card-price">₱25,000.00 <br>For 1 hour Minimum</p>
-              <p>perfect for making a grand entrance at any event. Features a plush interior and is chauffeur-driven.</p>
+              <p class="card-price">₱25,000.00 <br>For 1 Hour Minimum</p>
+              <p>Perfect for making a grand entrance at any event. Features a plush interior and is chauffeur-driven.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
