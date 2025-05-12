@@ -1,29 +1,12 @@
 <?php
-
-include '../dbcon.php';
-
 session_start();
 
-if (!isset($_SESSION['cart'])) {
-  $_SESSION['cart'] = [];
-}
+if (isset($_GET['car'], $_GET['price'])) {
+    $_SESSION['car_name']  = $_GET['car'];
+    $_SESSION['car_price'] = $_GET['price'];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
-  $product = $_POST['product'];
-  $price = floatval($_POST['price']);
-
-  if (isset($_SESSION['cart'][$product])) {
-    $_SESSION['cart'][$product]['quantity'] += 1;
-  } else {
-    $_SESSION['cart'][$product] = [
-      'name' => $product,
-      'price' => $price,
-      'quantity' => 1
-    ];
-  }
-
-  header("Location: ../Cart/cart.php");
-  exit();
+    header('Location: ../Rent/booking.php');
+    exit;
 }
 ?>
 
@@ -82,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
       </ul>
       <ul class="nav-list secondary-nav">
         <li class="nav-item"><a href="../Cart/cart.php" class="nav-link">
-            <span class="material-symbols-rounded">directions_car</span>
-            <span class="nav-label">My Car List</span>
+            <span class="material-symbols-rounded">Message</span>
+            <span class="nav-label">Message Us</span>
           </a>
         </li>
         <li class="nav-item">
@@ -117,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="119.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Toyota%20Fortuner&price=3275" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -138,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Ford%20Everest&price=4900" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -159,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Hyundai%20Tucson&price=3800" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -182,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Toyota%20Land%20Cruiser&price=5000" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -203,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Hyundai%20Santa%20Fe&price=3500" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>

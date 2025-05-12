@@ -1,8 +1,12 @@
-<?php session_start(); ?>
 <?php
-if (isset($_GET['car']) && isset($_GET['price'])) {
-    $_SESSION['car_name'] = $_GET['car'];
+session_start();
+
+if (isset($_GET['car'], $_GET['price'])) {
+    $_SESSION['car_name']  = $_GET['car'];
     $_SESSION['car_price'] = $_GET['price'];
+
+    header('Location: ../Rent/booking.php');
+    exit;
 }
 ?>
 
@@ -61,8 +65,8 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
       </ul>
       <ul class="nav-list secondary-nav">
         <li class="nav-item"><a href="../Cart/cart.php" class="nav-link">
-            <span class="material-symbols-rounded">directions_car</span>
-            <span class="nav-label">My Car List</span>
+            <span class="material-symbols-rounded">Message</span>
+            <span class="nav-label">Message Us</span>
           </a>
         </li>
         <li class="nav-item">
@@ -88,15 +92,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Honda Civic</p>
-              <p class="card-price">₱2,550.00 <br>For 24 Hours</p>
+              <p class="card-price">₱2,550.00 <br>For 24 Hours Minimum</p>
               <p>Reliable, fuel-efficient, and compact. Ideal for city driving and long trips.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Honda%20Civic&price=2550" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -109,15 +113,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Hyundai Elantra</p>
-              <p class="card-price">₱2,500.00 <br>For 24 Hours</p>
+              <p class="card-price">₱2,500.00 <br>For 24 Hours Minimum</p>
               <p>Comes with modern features like Apple CarPlay and Android Auto.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Hyundai%20Elantra&price=2550" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -130,15 +134,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Mazda 3</p>
-              <p class="card-price">₱2,700.00 <br>For 24 Hours</p>
+              <p class="card-price">₱2,700.00 <br>For 24 Hours Minimum</p>
               <p>Sporty handling, stylish design, and comfortable interior.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Mazda%203&price=2700" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -153,15 +157,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Nissan Altima</p>
-              <p class="card-price">₱2,250.00 <br>For 24 Hours</p>
+              <p class="card-price">₱2,250.00 <br>For 24 Hours Minimum</p>
               <p>With good fuel economy and spacious interior. Good for long-distance travel.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Nissan%20Altima&price=2250" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -174,15 +178,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Subaru Impreza</p>
-              <p class="card-price">₱2,800.00 <br>For 24 Hours</p>
+              <p class="card-price">₱2,800.00 <br>For 24 Hours Minimum</p>
               <p>A great option for varying weather conditions.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Subaru%20Impreza&price=2800" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -195,15 +199,15 @@ if (isset($_GET['car']) && isset($_GET['price'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Toyota Corolla</p>
-              <p class="card-price">₱1,500.00 <br>For 24 Hours</p>
+              <p class="card-price">₱1,500.00 <br>For 24 Hours Minimum</p>
               <p>Reliable and fuel efficient. Compact, with a smooth and comfortable ride.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
                   <input type="hidden" name="product" value="Ube Dune Cake">
                   <input type="hidden" name="price" value="189.00">
-                  <button type="submit" class="btn button" id="button">Add to list</button>
+                  <button type="submit" class="btn button" id="button">Ask Owner</button>
                 </form>
-                <a href="../Rent/booking.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Toyota%20Corolla&price=1500" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>

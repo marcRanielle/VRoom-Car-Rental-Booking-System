@@ -1,29 +1,12 @@
 <?php
-
-include '../dbcon.php';
-
 session_start();
 
-if (!isset($_SESSION['cart'])) {
-  $_SESSION['cart'] = [];
-}
+if (isset($_GET['car'], $_GET['price'])) {
+    $_SESSION['car_name']  = $_GET['car'];
+    $_SESSION['car_price'] = $_GET['price'];
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
-  $product = $_POST['product'];
-  $price = floatval($_POST['price']);
-
-  if (isset($_SESSION['cart'][$product])) {
-    $_SESSION['cart'][$product]['quantity'] += 1;
-  } else {
-    $_SESSION['cart'][$product] = [
-      'name' => $product,
-      'price' => $price,
-      'quantity' => 1
-    ];
-  }
-
-  header("Location: ../Cart/cart.php");
-  exit();
+    header('Location: ../Rent/booking.php');
+    exit;
 }
 ?>
 
@@ -82,8 +65,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
       </ul>
       <ul class="nav-list secondary-nav">
         <li class="nav-item"><a href="../Cart/cart.php" class="nav-link">
-            <span class="material-symbols-rounded">directions_car</span>
-            <span class="nav-label">My Car List</span>
+            <span class="material-symbols-rounded">Message</span>
+            <span class="nav-label">Message Us</span>
           </a>
         </li>
         <li class="nav-item">
@@ -109,7 +92,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Rolls-Royce Phantom</p>
-              <p class="card-price">₱27,500.00 <br>For 1 Hour Minimum</p>
+              <p class="card-price">₱27,500.00 <br>For 24 Hours Minimum</p>
               <p>Ideal for weddings, VIP transfers, and prestigious corporate events. Comes with a professional chauffeur.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -117,7 +100,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="119.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Rolls-Royce%20Phantom&price=27500" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -138,7 +121,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Rolls-Royce%20Ghost&price=25000" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -151,7 +134,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Ferrari 458 Italia</p>
-              <p class="card-price">₱35,000.00 <br>For 1 Hour Minimum</p>
+              <p class="card-price">₱35,000.00 <br>For 24 Hours Minimum</p>
               <p>Experience the thrill of driving a Ferrari 458 Italia. Perfect for special occasions and comes with a professional driver.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -159,7 +142,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Ferrari%20458%20Italia&price=35000" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -174,7 +157,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Lamborghini Aventador</p>
-              <p class="card-price">₱35,000.00 <br>For 1 Hour Minimum</p>
+              <p class="card-price">₱35,000.00 <br>For 24 Hours Minimum</p>
               <p>Make a statement with the Lamborghini Aventador. Perfect for city tours, weddings, or unique arrivals. Comes with a professional driver.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -182,7 +165,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Lamborghini%20Aventador&price=35000" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -195,7 +178,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Mercedes-Benz E-Class</p>
-              <p class="card-price">₱1,700.00 <br>For 1 hour Minimum</p>
+              <p class="card-price">₱17,700.00 <br>For 24 Hours Minimum</p>
               <p>The Mercedes-Benz E-Class offers a comfortable ride with a sleek design. Suitable for business trips and special occasions. Chauffeur-driven.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -203,7 +186,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Mercedes-Benz%20E-Class&price=1700" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
@@ -216,7 +199,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
             </a>
             <div class="card-body">
               <p class="card-text">Lexus LM</p>
-              <p class="card-price">₱2,500.00 <br>For 1 hour Minimum</p>
+              <p class="card-price">₱19,500.00 <br>For 24 Hours Minimum</p>
               <p>Luxurious ride with elite interiors and advanced features. Perfect for VIP transport and special events. Comes with a professional driver.</p>
               <div class="row" id="row">
                 <form method="POST" class="col">
@@ -224,7 +207,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['product'])) {
                   <input type="hidden" name="price" value="189.00">
                   <button type="submit" class="btn button" id="button">Add to list</button>
                 </form>
-                <a href="../Rent/payment.php" class="btn button col" id="button">Rent now</a>
+                <a href="menu1.php?car=Lexus%20LM&price=15500" class="btn button col" id="button">Rent now</a>
               </div>
             </div>
           </div>
