@@ -19,7 +19,6 @@
     </ul>
 
     <div class="tab-content pt-4" id="messageTabContent">
-      <!-- Message Form -->
       <div class="tab-pane fade show active" id="form" role="tabpanel">
         <form id="messageForm">
           <div class="mb-3">
@@ -38,7 +37,6 @@
         </form>
       </div>
 
-      <!-- Messages Display -->
       <div class="tab-pane fade" id="messages" role="tabpanel">
         <div id="messageList" class="mt-3"></div>
       </div>
@@ -57,13 +55,8 @@
       const email = document.getElementById("email").value;
       const message = document.getElementById("message").value;
 
-      // Add message to array
       messages.push({ name, email, message });
-
-      // Reset form
       messageForm.reset();
-
-      // Update message list
       renderMessages();
     });
 
