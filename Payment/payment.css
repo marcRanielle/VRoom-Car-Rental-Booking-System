@@ -1,0 +1,134 @@
+#navbar {
+  background-color: #000000;
+}
+
+.navbar .nav-link {
+  color: white;
+}
+
+.navbar .nav-link:hover {
+  color: #5C3B1E;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
+}
+
+#brand {
+  font-family: 'Courier New', Courier, monospace;
+  color: #C600FF;
+}
+
+.footer {
+  background-color: #000000 !important;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #C600FF;
+}
+
+.fw-bold {
+  color: white;
+}
+
+.fw-semibold {
+  color: white;
+}
+
+#navlogo {
+  width: 50px;
+  height: 50px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+#payprocess {
+    width: 80%;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Heading Styles */
+h2{
+    color: #F2B13A;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Form and Input Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+input[type="radio"], input[type="submit"] {
+    margin-right: 10px;
+}
+
+input[type="submit"] {
+    background-color: #F2B13A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #e09c2d;
+}
+
+/* Receipt Section */
+.receipt p {
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.receipt p strong {
+    color: #F2B13A;
+}
+
+.receipt img {
+    display: block;
+    margin: 20px auto;
+    max-width: 200px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Additional Styling for Rental Code */
+.receipt .rental-code {
+    font-size: 18px;
+    color: #333;
+    font-weight: bold;
+    margin-top: 20px;
+    background-color: #F2B13A;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}

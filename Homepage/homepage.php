@@ -144,7 +144,7 @@
       <div id="aboutcon">
         <h2 id="abouttitle">About Us</h2>
         <p class="parag" id="parag">
-          Welcome to <strong>VRoom Car Rentals</strong>, a partner for convenient, reliable, and affordable car rental services. 
+          Welcome to <strong class="vroom">VRoom Car Rentals</strong>, a partner for convenient, reliable, and affordable car rental services. 
           <br>Whether you're planning a weekend getaway, a business trip, or simply need a vehicle for daily use, we offer a wide selection of vehicles to match your needs.
         </p>
 

@@ -71,10 +71,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         <form action="booking.php" enctype="multipart/form-data" method="POST">
 
             <div class="reminder">
-                    <p>The minimum rental time is <strong>1 day (24 hours)</strong>.</li>
-                    <p>If the start and end time is less than 24 hours, it will be <strong>charged as 1 full day</strong>.</p>
-                    <p>If you exceed the time limit for a 1-day rental, <strong>you will still be charged for 1 day</strong>.</p>
-                    <p>If you need additional time, please <strong>contact the owner</strong> to discuss possible <strong>overtime fees</strong>.</p>
+                <p>The minimum rental time is <strong>1 day (24 hours)</strong>.</li>
+                <p>If the start and end time is less than 24 hours, it will be <strong>charged as 1 full day</strong>.</p>
+                <p>If you exceed the time limit for a 1-day rental, <strong>you will still be charged for 1 day</strong>.</p>
+                <p>If you need additional time, please <strong>contact the owner</strong> to discuss possible <strong>overtime fees</strong>.</p>
             </div>
 
             <div class="row mb-3">
@@ -146,7 +146,11 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             </div>
 
             <div class="mb-3">
-                <label for="licenseUpload" class="form-label">Driver’s License (Upload image)<b>*</b></label>
+                <label for="licenseUpload" class="form-label">Driver’s License (Front)<b>*</b></label>
+                <input type="file" class="form-control" id="licenseUpload" accept=".jpg,.jpeg,.png,.pdf" name="licenseUpload" required>
+            </div>
+            <div class="mb-3">
+                <label for="licenseUpload" class="form-label">Driver’s License (Back)<b>*</b></label>
                 <input type="file" class="form-control" id="licenseUpload" accept=".jpg,.jpeg,.png,.pdf" name="licenseUpload" required>
             </div>
 

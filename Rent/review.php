@@ -14,15 +14,31 @@ $end = new DateTime($endDateTime);
 $interval = $start->diff($end);
 
 $days = (int)$interval->format('%a');
+$extraHours = $interval->h;
+$extraMinutes = $interval->i;
+$extraSeconds = $interval->s;
 
-$hasExtraTime = ($interval->h > 0 || $interval->i > 0 || $interval->s > 0);
-
-if ($hasExtraTime || $days === 0) {
-    $days += 1; 
+if ($extraMinutes > 0 || $extraSeconds > 0) {
+    $extraHours += 1;
 }
 
 $dailyRate = $_SESSION['car_price'];
-$total = $days * $dailyRate;
+
+$totalDaysCost = $days * $dailyRate;
+
+$extraTimeCost = 0;
+if ($extraHours > 0) {
+    $missingHours = 24 - $extraHours;
+    $discount = $missingHours * 100;
+    $minCharge = $dailyRate * 0.40;
+
+    $extraTimeCost = max($dailyRate - $discount, $minCharge);
+}
+
+$totalPrice = $totalDaysCost + $extraTimeCost;
+
+$_SESSION['total_price'] = $totalPrice;
+
 
 $extras = $_SESSION['extras'] ?? [];
 $extraTotal = 0;
@@ -44,7 +60,9 @@ if (in_array('insurance', $extras)) {
 $name = $_SESSION['full_name'] ?? 'N/A';
 $email = $_SESSION['email_address'] ?? 'N/A';
 $contact = $_SESSION['contact_number'] ?? 'N/A';
-$totalPrice = $total + $extraTotal;
+$totalCost = $totalPrice + $extraTotal;
+$_SESSION['total_price'] = $totalCost;
+
 
 ?>
 
@@ -93,9 +111,13 @@ $totalPrice = $total + $extraTotal;
     <p><strong>Pickup Location:</strong> <?= htmlspecialchars($pickup) ?></p>
     <p><strong>Drop-off Location:</strong> <?= htmlspecialchars($dropoff) ?></p>
 
-    <p><strong>Rental Duration:</strong> <?= $days ?> day(s) <?= $hasExtraTime ? 'extra time count as 1 day' : '' ?></p>
-<p><strong>Total Cost:</strong> ₱<?= number_format($total) ?></p>
-</p>
+    <p><strong>Rental Duration:</strong> <?= $days ?> day(s)
+      <?php if ($extraHours > 0): ?>
+        <?= $extraHours ?> hour(s)
+      <?php endif; ?>
+      
+    </p>
+    <p><strong>Total Cost:</strong> ₱<?= number_format($totalPrice) ?></p>
 
     <h4>Extras</h4>
     <?php if (!empty($extrasList)): ?>
@@ -114,9 +136,9 @@ $totalPrice = $total + $extraTotal;
     <p><strong>Contact Number:</strong> <?= htmlspecialchars($contact) ?></p>
 
     <h4>Total Price</h4>
-    <p id="totalprice"><strong>₱<?= number_format($totalPrice, 2) ?></strong></p>
+    <p id="totalprice"><strong>₱<?= number_format($totalCost, 2) ?></strong></p>
 
-    <a href="confirm.php" class="btn btn-primary">Confirm and Pay</a>
+    <a href="../Payment/payment.php" class="btn btn-primary">Confirm and Pay</a>
     <a href="../Rent/booking.php" class="btn btn-secondary">Edit Information</a>
   </div>
 
